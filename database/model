@@ -1,0 +1,18 @@
+const mongoose=require("mongoose")
+const collection1Schema=mongoose.Schema({
+    username:String,
+    password:String,
+    email:String,
+    otp:String
+    
+});
+const collection2Schema=mongoose.Schema({
+    username:String,
+    password:String,
+    email:String,
+    otp:String
+    
+});
+const collection1=mongoose.model("dataofUsers",collection1Schema)
+const collection2=mongoose.model("dataofadmins",collection2Schema)
+module.exports={collection1,collection2}
